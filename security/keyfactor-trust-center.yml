@@ -1,0 +1,26 @@
+generated: '2026-07-19'
+method: searched
+source: https://trust.keyfactor.com/
+url: https://trust.keyfactor.com/
+platform: SafeBase
+certifications:
+  - ISO/IEC 27001
+  - SOC 2
+  - SOC 3
+  - Common Criteria
+  - FedRAMP (Class C)
+  - CMMC
+  - EU-US Data Privacy Framework
+  - ISO 9001:2015
+  - ISO 14001:2015
+  - VPAT (accessibility)
+compliance_notes: >-
+  Keyfactor operates a SafeBase-hosted trust center at trust.keyfactor.com
+  documenting its security posture, subprocessors, and certifications. As a PKI
+  and code-signing vendor, several products are also Common Criteria evaluated
+  and FIPS-relevant. Certifications above are those named on the public trust
+  center; ISO 27017/27018, PCI DSS, HIPAA, and FIPS 140 were not listed there at
+  capture time.
+evidence:
+  - source: https://trust.keyfactor.com/
+    keywords: [iso 27001, soc 2, common criteria, fedramp, trust center]

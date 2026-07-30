@@ -1,0 +1,37 @@
+generated: '2026-07-19'
+method: searched
+source: https://github.com/Keyfactor + pkg.go.dev + nuget.org
+packages:
+  - language: go
+    registry: pkg.go.dev
+    name: github.com/Keyfactor/keyfactor-go-client
+    version: v3.5.6
+    url: https://pkg.go.dev/github.com/Keyfactor/keyfactor-go-client
+    install: go get github.com/Keyfactor/keyfactor-go-client/v3
+    repository: https://github.com/Keyfactor/keyfactor-go-client
+    official: true
+    description: Go package/SDK for the Keyfactor Command API.
+  - language: go
+    registry: github
+    name: kfutil
+    url: https://github.com/Keyfactor/kfutil
+    install: go install github.com/Keyfactor/kfutil@latest
+    repository: https://github.com/Keyfactor/kfutil
+    official: true
+    kind: cli
+    description: Keyfactor Command Utility (kfutil) - Go CLI wrapper for the Keyfactor Command API.
+  - language: dotnet
+    registry: nuget
+    name: KeyfactorClientSDK
+    version: 1.0.0
+    url: https://www.nuget.org/packages/KeyfactorClientSDK
+    install: dotnet add package KeyfactorClientSDK
+    repository: https://github.com/Keyfactor/keyfactor-csharp-client-sdk
+    official: true
+    authors: Keyfactor Inc.
+    description: C#/.NET client SDK for the Keyfactor Command API.
+notes: >-
+  Keyfactor also maintains ~195 open-source repositories (orchestrator
+  extensions, CA gateways, GitHub Actions) under github.com/Keyfactor, and an
+  experimental Python SDK powering the Command MCP server under
+  github.com/keyfactor-research (not published to PyPI at time of capture).

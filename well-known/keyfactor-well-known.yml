@@ -1,0 +1,24 @@
+generated: '2026-07-19'
+method: searched
+source: live probes of Keyfactor public hosts
+hosts:
+  - host: https://www.keyfactor.com
+    documents:
+      - path: /.well-known/security.txt
+        status: 404
+  - host: https://docs.keyfactor.com
+    documents:
+      - path: /.well-known/security.txt
+        status: 404
+  - host: https://trust.keyfactor.com
+    documents:
+      - path: /.well-known/security.txt
+        status: 404
+result: none
+notes: >-
+  No /.well-known/ discovery documents (security.txt, openid-configuration,
+  oauth-authorization-server, api-catalog, ai-plugin.json) are published on
+  Keyfactor's public marketing/docs hosts. Keyfactor Command's OIDC/OAuth
+  discovery lives on each customer's own identity provider (Keycloak or other),
+  not on a central public host. Absence recorded as valid negative data; no
+  WellKnown pointer emitted.

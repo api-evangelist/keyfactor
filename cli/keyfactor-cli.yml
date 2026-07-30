@@ -1,0 +1,40 @@
+generated: '2026-07-19'
+method: searched
+source: https://github.com/Keyfactor/kfutil
+cli:
+  name: kfutil
+  full_name: Keyfactor Command Utility
+  language: go
+  repository: https://github.com/Keyfactor/kfutil
+  docs: https://github.com/Keyfactor/kfutil/blob/main/README.md
+  description: >-
+    Go-lang CLI wrapper for the Keyfactor Command API with helper functions that
+    automate common Keyfactor Command operations (certificate stores, PAM
+    providers, certificate import/export, and bulk operations).
+  install:
+    - method: go
+      command: go install github.com/Keyfactor/kfutil@latest
+    - method: binary
+      command: Download a release binary from https://github.com/Keyfactor/kfutil/releases
+  auth:
+    note: >-
+      Configured via `kfutil login` (interactive) or environment variables /
+      config file supplying Command host and credentials (Basic auth service
+      account or OAuth client credentials).
+  command_groups:
+    - name: login
+      description: Authenticate to a Keyfactor Command instance.
+    - name: stores
+      description: Manage certificate stores (list, create, update, delete, import, export).
+    - name: store-types
+      description: Manage certificate store types.
+    - name: pam
+      description: Manage PAM (privileged access management) providers.
+    - name: certs
+      description: Certificate operations (import, export, deploy).
+    - name: containers
+      description: Manage certificate store containers.
+    - name: orchs
+      description: Manage orchestrators and orchestrator jobs.
+    - name: root
+      description: Bulk / migration and utility helper commands.

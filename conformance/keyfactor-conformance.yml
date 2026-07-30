@@ -1,0 +1,55 @@
+generated: '2026-07-19'
+method: searched
+source: https://www.keyfactor.com/keyfactor-for-developers/ + https://trust.keyfactor.com/ + https://docs.keyfactor.com
+standards:
+  # Certificate enrollment / PKI protocols (EJBCA + Command)
+  - id: acme-rfc8555
+    name: ACME
+    conforms: true
+    evidence: Keyfactor EJBCA and Command support ACME (RFC 8555) certificate enrollment.
+  - id: est-rfc7030
+    name: EST
+    conforms: true
+    evidence: Keyfactor EJBCA and Command support EST (RFC 7030) enrollment.
+  - id: scep
+    name: SCEP
+    conforms: true
+    evidence: Keyfactor EJBCA and Command support SCEP device enrollment.
+  - id: cmp-rfc4210
+    name: CMP
+    conforms: true
+    evidence: Keyfactor EJBCA supports CMP (RFC 4210) certificate management.
+  # API auth
+  - id: oauth2
+    name: OAuth 2.0
+    conforms: true
+    evidence: Keyfactor Command Web API supports OAuth 2.0 client-credentials authentication.
+  - id: oidc
+    name: OpenID Connect
+    conforms: true
+    evidence: Command integrates with OIDC identity providers (Keycloak) for API auth.
+  # Compliance / assurance (published on trust center)
+  - id: soc2
+    name: SOC 2
+    conforms: true
+    evidence: Named on trust.keyfactor.com.
+  - id: soc3
+    name: SOC 3
+    conforms: true
+    evidence: Named on trust.keyfactor.com.
+  - id: iso27001
+    name: ISO/IEC 27001
+    conforms: true
+    evidence: Named on trust.keyfactor.com.
+  - id: fedramp
+    name: FedRAMP
+    conforms: true
+    evidence: FedRAMP (Class C) named on trust.keyfactor.com.
+  - id: common-criteria
+    name: Common Criteria
+    conforms: true
+    evidence: EJBCA is Common Criteria evaluated; named on trust.keyfactor.com.
+  - id: cmmc
+    name: CMMC
+    conforms: true
+    evidence: Named on trust.keyfactor.com.

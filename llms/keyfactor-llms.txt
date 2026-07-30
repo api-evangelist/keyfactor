@@ -1,0 +1,40 @@
+# Keyfactor
+
+> Keyfactor is a machine-identity and PKI (public key infrastructure) company that provides a control plane for digital trust — certificate lifecycle automation, quantum-ready PKI, code signing, and cryptographic discovery across enterprise, cloud, and IoT environments. Core products are Keyfactor Command (certificate lifecycle automation), EJBCA Enterprise (PKI/CA), SignServer/Signum (code signing), and Cloud PKI-as-a-Service. Backed by Insight Partners.
+
+This is an API Evangelist catalog profile (generated from apis.yml and repo artifacts). Keyfactor Command exposes a REST Web API served per-customer from each self-hosted or cloud instance; EJBCA exposes a REST API as well. There is no single public hosted OpenAPI to link.
+
+## Developer
+
+- [Keyfactor for Developers](https://www.keyfactor.com/keyfactor-for-developers/): developer landing page
+- [Product Documentation](https://docs.keyfactor.com): docs for Command, EJBCA, SignServer
+- [Get Started with PKI and Signing](https://docs.keyfactor.com/solution-areas/latest/get-started-with-pki-and-signing): getting-started guide
+- [Test Drives](https://docs.keyfactor.com/test-drives/latest/): hands-on labs
+- [Support Portal](https://support.keyfactor.com/hc/en-us): support / help center
+- [Keyfactor University](https://training.keyfactor.com): training
+
+## Auth
+
+- OAuth 2.0 client-credentials via an OIDC provider (Keycloak) or Active Directory Basic/Windows integrated auth. Send `x-keyfactor-requested-with: APIClient`. See authentication/keyfactor-authentication.yml.
+
+## SDKs and CLI
+
+- [keyfactor-go-client](https://pkg.go.dev/github.com/Keyfactor/keyfactor-go-client): official Go SDK (v3)
+- [KeyfactorClientSDK (.NET)](https://www.nuget.org/packages/KeyfactorClientSDK): official C# SDK
+- [kfutil](https://github.com/Keyfactor/kfutil): official Go CLI for the Command API
+- [Keyfactor on GitHub](https://github.com/Keyfactor): ~195 open-source integrations and orchestrators
+
+## Agentic
+
+- [command-mcp](https://github.com/keyfactor-research/command-mcp): experimental-preview MCP server for agentic-AI integration with Keyfactor Command
+
+## Security and Trust
+
+- [Trust Center](https://trust.keyfactor.com/): SOC 2/3, ISO 27001, FedRAMP, Common Criteria, CMMC, EU-US DPF
+- Responsible disclosure: support@keyfactor.zendesk.com
+
+## Company
+
+- [Website](https://www.keyfactor.com/)
+- [Blog](https://www.keyfactor.com/blog/)
+- [Privacy Policy](https://www.keyfactor.com/privacy-policy/)

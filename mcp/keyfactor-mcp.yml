@@ -1,0 +1,22 @@
+generated: '2026-07-19'
+method: searched
+status: preview
+source: https://github.com/keyfactor-research/command-mcp
+server:
+  name: command-mcp
+  vendor: Keyfactor
+  transport: stdio
+  repository: https://github.com/keyfactor-research/command-mcp
+  language: python
+  hosted: false
+  maturity: experimental-preview
+  description: >-
+    Experimental preview MCP (Model Context Protocol) server that enables
+    agentic-AI integration with Keyfactor Command. Built on the Keyfactor
+    Analytics & AI team's Python SDK. Published under the keyfactor-research
+    organization as a preview, not a GA hosted server.
+notes: >-
+  No hosted/remote MCP endpoint is advertised; the server is run locally against
+  a Keyfactor Command instance. Tools are defined by the command-mcp project and
+  the underlying Python SDK rather than derived from a public OpenAPI (Command's
+  API reference is served per-customer from each self-hosted instance).
