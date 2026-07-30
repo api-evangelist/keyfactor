@@ -1,8 +1,31 @@
 aid: keyfactor
 name: Keyfactor
-description: 'Keyfactor is a company surfaced as a portfolio company of insight-partners and added to
-  the API Evangelist network as a stub for enrichment. Sector: cybersecurity. This profile is a lead awaiting
-  the enrichment pipeline.'
+description: >-
+  Keyfactor is a machine-identity and PKI (public key infrastructure) company
+  that provides a control plane for digital trust — helping organizations
+  discover, issue, automate, and govern cryptographic keys and certificates
+  across enterprise, cloud, DevOps, and IoT environments. Its core products are
+  Keyfactor Command (certificate lifecycle automation at scale), EJBCA
+  Enterprise (modern, quantum-ready PKI and certificate authority), SignServer /
+  Signum (code signing and verification), Cloud PKI-as-a-Service, and
+  cryptographic discovery and inventory. Keyfactor Command and EJBCA expose REST
+  APIs (self-hosted or cloud, per customer) with official Go, .NET, and CLI
+  clients, and an experimental MCP server for agentic-AI integration. Keyfactor
+  is trusted by roughly 40% of the Fortune 500 and is backed by Insight
+  Partners.
+accessModel:
+  pricing: unknown
+  onboarding: self-serve
+  trial: false
+  try_now: false
+  public: false
+  label: Self-serve signup
+  confidence: medium
+  source:
+  - authentication
+  generated: '2026-07-22'
+  method: derived
+image: https://www.keyfactor.com/wp-content/uploads/keyfactor-logo-dark.svg
 url: https://raw.githubusercontent.com/api-evangelist/keyfactor/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -12,10 +35,17 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-19'
 tags:
 - Company
 - Cybersecurity
+- PKI
+- Machine Identity
+- Certificate Lifecycle
+- Code Signing
+- Cryptography
+- Digital Trust
+- Security
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -25,3 +55,48 @@ maintainers:
 common:
 - type: Website
   url: https://www.keyfactor.com/
+- type: DeveloperPortal
+  url: https://www.keyfactor.com/keyfactor-for-developers/
+- type: Documentation
+  url: https://docs.keyfactor.com/
+- type: GettingStarted
+  url: https://docs.keyfactor.com/solution-areas/latest/get-started-with-pki-and-signing
+- type: Support
+  url: https://support.keyfactor.com/hc/en-us
+- type: Blog
+  url: https://www.keyfactor.com/blog/
+- type: GitHubOrganization
+  url: https://github.com/Keyfactor
+- type: SignUp
+  url: https://www.keyfactor.com/try-ejbca-enterprise/
+- type: PrivacyPolicy
+  url: https://www.keyfactor.com/privacy-policy/
+- type: Packages
+  url: packages/keyfactor-packages.yml
+- type: SDKs
+  url: packages/keyfactor-packages.yml
+- type: CLI
+  url: cli/keyfactor-cli.yml
+- type: MCPServer
+  url: mcp/keyfactor-mcp.yml
+- type: LLMsTxt
+  url: llms/keyfactor-llms.txt
+- type: Authentication
+  url: authentication/keyfactor-authentication.yml
+- type: Conformance
+  url: conformance/keyfactor-conformance.yml
+- type: Compliance
+  url: https://trust.keyfactor.com/
+- type: DomainSecurity
+  url: security/keyfactor-domain-security.yml
+- type: VulnerabilityDisclosure
+  url: security/keyfactor-vulnerability-disclosure.yml
+- type: Security
+  url: https://trust.keyfactor.com/
+- type: TrustCenter
+  url: https://trust.keyfactor.com/
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
