@@ -1,6 +1,7 @@
 generated: '2026-07-19'
 method: searched
-status: preview
+status: announced
+status_raw: preview
 source: https://github.com/keyfactor-research/command-mcp
 server:
   name: command-mcp
