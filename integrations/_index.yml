@@ -101,3 +101,33 @@
     detected: '2026-10-18'
   status: not-a-workflow
   arazzo: null
+- slug: keyfactor-go-module-proxy
+  label: Go module proxy
+  partner_name: Go module proxy
+  category: official SDK (Go)
+  type: register
+  channel: package-registry
+  evidence: https://pkg.go.dev/github.com/Keyfactor/keyfactor-go-client
+  source: edge
+  relationship: distribution-channel
+  contract_reference:
+    register: Go module proxy (public registry JSON)
+    spec_file: null
+    language: Go
+    packages:
+    - name: github.com/Keyfactor/keyfactor-go-client
+      version: v1.4.3
+      released: '2023-05-03'
+      released_field: Time
+      lapsed: true
+      page: https://pkg.go.dev/github.com/Keyfactor/keyfactor-go-client
+      repo_leg: github-org:keyfactor
+      publisher_leg: org:keyfactor
+      matched_by: github-org
+    current: false
+    signal_note: 'an official package on the registry: distribution, not an integration; lapsed = no release in
+      24 months'
+    detected_by: sweep-official-sdks.py
+    detected: '2026-10-18'
+  status: not-a-workflow
+  arazzo: null
