@@ -20,63 +20,6 @@ checked:
 - https://www.openchainproject.org/community-of-conformance
 marketplace_apps: []
 edges:
-- partner_name: AWS Marketplace
-  partner: amazon-web-services
-  partner_match: aggregator
-  type: marketplace
-  marketplace: aws-marketplace
-  channel: distribution
-  relationship: distribution-channel
-  direction: third-party
-  evidence: https://aws.amazon.com/marketplace/seller-profile?id=7edf9048-58e6-4086-9d98-b8e0c1d78fce
-  listing_count: 6
-  apps:
-  - EJBCA SaaS - KMS Backed CA in the AP Region
-  - EJBCA SaaS - CloudHSM Backed CA in the US Region
-  - EJBCA SaaS - CloudHSM Backed CA in the AP Region
-  - EJBCA SaaS - KMS Backed CA in the US Region
-  - EJBCA SaaS - CloudHSM Backed CA in the EU Region
-  seller_name: Keyfactor, Inc.
-  detected_by: sweep-cloud-marketplaces.py
-  detected: '2026-10-13'
-- partner_name: Microsoft Azure Marketplace
-  partner: microsoft-azure
-  partner_match: aggregator
-  type: marketplace
-  marketplace: azure-marketplace
-  channel: distribution
-  relationship: distribution-channel
-  direction: third-party
-  evidence: https://azuremarketplace.microsoft.com/en-us/marketplace/apps?search=Keyfactor%2C%20Inc.
-  listing_count: 6
-  apps:
-  - EJBCA Enterprise Cloud Registration Authority (RA)
-  - EJBCA SaaS - With Key Vault Backed CA Keys
-  - EJBCA SaaS - With Azure Key Vault Managed HSM Backed CA Keys
-  - EJBCA Enterprise Cloud - Certificate Authority (CA) & PKI
-  - SignServer Enterprise Cloud
-  seller_name: Keyfactor, Inc.
-  detected_by: sweep-cloud-marketplaces.py
-  detected: '2026-10-13'
-- partner_name: Microsoft Azure Marketplace
-  partner: microsoft-azure
-  partner_match: aggregator
-  type: marketplace
-  marketplace: azure-marketplace
-  channel: distribution
-  relationship: distribution-channel
-  direction: third-party
-  evidence: https://azuremarketplace.microsoft.com/en-us/marketplace/apps?search=Keyfactor%2C%20Inc.
-  listing_count: 6
-  apps:
-  - Bouncy Castle Crypto APIs
-  - 'Command SaaS: Certificate Lifecycle Automation'
-  - Signum SaaS
-  - 'Keyfactor Command: PKI as-a-Service'
-  - Keyfactor Command
-  seller_name: Keyfactor, Inc.
-  detected_by: sweep-cloud-marketplaces.py
-  detected: '2026-10-13'
 - partner_name: CrowdStrike (own)
   partner: crowdstrike
   partner_match: mirror
@@ -93,38 +36,6 @@ edges:
   listing_count: 1
   detected: '2026-10-14'
   detected_by: mirror-platform-listings.py
-- partner_name: CNCF (Cloud Native Landscape)
-  partner: cncf
-  partner_match: register
-  type: register
-  direction: partner-built
-  category: Cloud native landscape
-  evidence: https://github.com/cncf/landscape/blob/3a7d378b1824b82e729a453bb03fa6f1e37557e1/landscape.yml
-  channel: standard-directory
-  relationship: standard-participant
-  contract_reference:
-    register: CNCF Cloud Native Landscape (github.com/cncf/landscape landscape.yml @3a7d378b18)
-    spec_file: null
-    standard: Cloud Native (CNCF)
-    role: cncf-member (Silver)
-    registered_name: Keyfactor
-    registered_names:
-    - Keyfactor
-    website: https://www.keyfactor.com/
-    matched_domain: keyfactor.com
-    matched_by: domain
-    member_tier: Silver
-    joined: '2023-01-01'
-    end_user: false
-    cncf_projects: []
-    landscape_categories: []
-    landscape_entries: 0
-    signal_note: 'participation only: a landscape listing is standard-participant evidence, not depth. Entries,
-      categories, tier and projects are CONTEXT, never read (breadth is not credit)'
-    detected_by: sweep-cloud-native.py
-    detected: '2026-10-15'
-  detected_by: sweep-cloud-native.py
-  first_seen: '2026-10-15'
 - partner_name: OpenSSF (Open Source Security Foundation)
   partner: null
   partner_match: register
@@ -184,5 +95,94 @@ edges:
     detected: '2026-10-18'
   detected_by: sweep-official-sdks.py
   first_seen: '2026-10-18'
+- partner_name: AWS Marketplace
+  partner: amazon-web-services
+  partner_match: aggregator
+  type: marketplace
+  marketplace: aws-marketplace
+  channel: distribution
+  relationship: distribution-channel
+  direction: third-party
+  evidence: https://aws.amazon.com/marketplace/seller-profile?id=7edf9048-58e6-4086-9d98-b8e0c1d78fce
+  listing_count: 6
+  apps:
+  - EJBCA SaaS - KMS Backed CA in the AP Region
+  - EJBCA SaaS - CloudHSM Backed CA in the US Region
+  - EJBCA SaaS - CloudHSM Backed CA in the AP Region
+  - EJBCA SaaS - KMS Backed CA in the US Region
+  - EJBCA SaaS - CloudHSM Backed CA in the EU Region
+  seller_name: Keyfactor, Inc.
+  detected_by: sweep-cloud-marketplaces.py
+  detected: '2026-10-13'
+- partner_name: Microsoft Azure Marketplace
+  partner: microsoft-azure
+  partner_match: aggregator
+  type: marketplace
+  marketplace: azure-marketplace
+  channel: distribution
+  relationship: distribution-channel
+  direction: third-party
+  evidence: https://azuremarketplace.microsoft.com/en-us/marketplace/apps?search=Keyfactor%2C%20Inc.
+  listing_count: 6
+  apps:
+  - EJBCA Enterprise Cloud Registration Authority (RA)
+  - EJBCA Enterprise Cloud - Certificate Authority (CA) & PKI
+  - SignServer Enterprise Cloud
+  - EJBCA Enterprise Cloud - Validation Authority (VA)
+  - EJBCA SaaS - With Key Vault Backed CA Keys
+  seller_name: Keyfactor, Inc.
+  detected_by: sweep-cloud-marketplaces.py
+  detected: '2026-10-19'
+- partner_name: Microsoft Azure Marketplace
+  partner: microsoft-azure
+  partner_match: aggregator
+  type: marketplace
+  marketplace: azure-marketplace
+  channel: distribution
+  relationship: distribution-channel
+  direction: third-party
+  evidence: https://azuremarketplace.microsoft.com/en-us/marketplace/apps?search=Keyfactor%2C%20Inc.
+  listing_count: 6
+  apps:
+  - Bouncy Castle Crypto APIs
+  - 'Command SaaS: Certificate Lifecycle Automation'
+  - 'Keyfactor Command: PKI as-a-Service'
+  - Keyfactor Command
+  - Keyfactor Command for IoT
+  seller_name: Keyfactor, Inc.
+  detected_by: sweep-cloud-marketplaces.py
+  detected: '2026-10-19'
+- partner_name: CNCF (Cloud Native Landscape)
+  partner: cncf
+  partner_match: register
+  type: register
+  direction: partner-built
+  category: Cloud native landscape
+  evidence: https://github.com/cncf/landscape/blob/42dd4cd91dad8ec8558ac02467a43f0805b9957a/landscape.yml
+  channel: standard-directory
+  relationship: standard-participant
+  contract_reference:
+    register: CNCF Cloud Native Landscape (github.com/cncf/landscape landscape.yml @42dd4cd91d)
+    spec_file: null
+    standard: Cloud Native (CNCF)
+    role: cncf-member (Silver)
+    registered_name: Keyfactor
+    registered_names:
+    - Keyfactor
+    website: https://www.keyfactor.com/
+    matched_domain: keyfactor.com
+    matched_by: domain
+    member_tier: Silver
+    joined: '2023-01-01'
+    end_user: false
+    cncf_projects: []
+    landscape_categories: []
+    landscape_entries: 0
+    signal_note: 'participation only: a landscape listing is standard-participant evidence, not depth. Entries,
+      categories, tier and projects are CONTEXT, never read (breadth is not credit)'
+    detected_by: sweep-cloud-native.py
+    detected: '2026-10-19'
+  detected_by: sweep-cloud-native.py
+  first_seen: '2026-10-15'
 source:
 - crowdstrike/integrations/crowdstrike-integration-edges.yml
