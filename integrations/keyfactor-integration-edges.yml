@@ -18,24 +18,9 @@ checked:
 - https://rubygems.org/api/v1
 - https://spdx.dev/use/spdx-tools/
 - https://www.openchainproject.org/community-of-conformance
+- docker-hub/integrations/docker-hub-integration-edges.yml
 marketplace_apps: []
 edges:
-- partner_name: CrowdStrike (own)
-  partner: crowdstrike
-  partner_match: mirror
-  mirror_match: domain
-  type: marketplace
-  relationship: platform-app
-  direction: third-party
-  channel: partner-built
-  marketplace: own
-  evidence: https://marketplace.crowdstrike.com/listings/infosec-global-agilesec-analytics/
-  mirror_of: crowdstrike/integrations/crowdstrike-integration-edges.yml
-  apps:
-  - Keyfactor AgileSec
-  listing_count: 1
-  detected: '2026-10-14'
-  detected_by: mirror-platform-listings.py
 - partner_name: OpenSSF (Open Source Security Foundation)
   partner: null
   partner_match: register
@@ -184,5 +169,42 @@ edges:
     detected: '2026-10-19'
   detected_by: sweep-cloud-native.py
   first_seen: '2026-10-15'
+- partner_name: CrowdStrike (own)
+  partner: crowdstrike
+  partner_match: mirror
+  mirror_match: domain
+  type: marketplace
+  relationship: platform-app
+  direction: third-party
+  channel: partner-built
+  marketplace: own
+  evidence: https://marketplace.crowdstrike.com/listings/infosec-global-agilesec-analytics/
+  mirror_of: crowdstrike/integrations/crowdstrike-integration-edges.yml
+  apps:
+  - Keyfactor AgileSec
+  listing_count: 1
+  detected: '2026-10-14'
+  detected_by: mirror-platform-listings.py
+- partner_name: Docker Hub (docker-verified-publisher)
+  partner: docker-hub
+  partner_match: mirror
+  mirror_match: domain
+  type: marketplace
+  relationship: platform-app
+  direction: third-party
+  channel: partner-built
+  marketplace: docker-verified-publisher
+  evidence: https://hub.docker.com/u/keyfactor
+  mirror_of: docker-hub/integrations/docker-hub-integration-edges.yml
+  apps:
+  - keyfactor/command-cert-manager-issuer
+  - keyfactor/ejbca-cert-manager-issuer
+  - keyfactor/signserver-ce
+  listing_count: 1
+  detected: '2026-10-20'
+  detected_by: mirror-platform-listings.py
+  category: Docker Verified Publisher
+  badges:
+  - Docker Verified Publisher
 source:
 - crowdstrike/integrations/crowdstrike-integration-edges.yml
