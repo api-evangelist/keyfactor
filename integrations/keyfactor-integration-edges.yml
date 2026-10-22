@@ -28,6 +28,7 @@ checked:
 - https://www.commoncriteriaportal.org/products/certified_products-archived.csv
 - https://www.commoncriteriaportal.org/products/certified_products.csv
 - https://www.niap-ccevs.org/Product/PCL.cfm
+- artifact-hub/integrations/artifact-hub-integration-edges.yml
 marketplace_apps: []
 edges:
 - partner_name: OpenSSF (Open Source Security Foundation)
@@ -178,80 +179,6 @@ edges:
     detected: '2026-10-19'
   detected_by: sweep-cloud-native.py
   first_seen: '2026-10-15'
-- partner_name: CrowdStrike (own)
-  partner: crowdstrike
-  partner_match: mirror
-  mirror_match: domain
-  type: marketplace
-  relationship: platform-app
-  direction: third-party
-  channel: partner-built
-  marketplace: own
-  evidence: https://marketplace.crowdstrike.com/listings/infosec-global-agilesec-analytics/
-  mirror_of: crowdstrike/integrations/crowdstrike-integration-edges.yml
-  apps:
-  - Keyfactor AgileSec
-  listing_count: 1
-  detected: '2026-10-14'
-  detected_by: mirror-platform-listings.py
-- partner_name: Docker Hub (docker-verified-publisher)
-  partner: docker-hub
-  partner_match: mirror
-  mirror_match: domain
-  type: marketplace
-  relationship: platform-app
-  direction: third-party
-  channel: partner-built
-  marketplace: docker-verified-publisher
-  evidence: https://hub.docker.com/u/keyfactor
-  mirror_of: docker-hub/integrations/docker-hub-integration-edges.yml
-  apps:
-  - keyfactor/command-cert-manager-issuer
-  - keyfactor/ejbca-cert-manager-issuer
-  - keyfactor/signserver-ce
-  listing_count: 1
-  detected: '2026-10-20'
-  detected_by: mirror-platform-listings.py
-  category: Docker Verified Publisher
-  badges:
-  - Docker Verified Publisher
-- partner_name: OpenTofu (opentofu-registry)
-  partner: opentofu
-  partner_match: mirror
-  mirror_match: domain
-  type: marketplace
-  relationship: platform-app
-  direction: third-party
-  channel: partner-built
-  marketplace: opentofu-registry
-  evidence: https://search.opentofu.org/provider/keyfactor-pub/keyfactor
-  mirror_of: opentofu/integrations/opentofu-integration-edges.yml
-  apps:
-  - keyfactor-pub/keyfactor
-  listing_count: 1
-  detected: '2026-10-21'
-  detected_by: mirror-platform-listings.py
-  category: infrastructure-as-code provider registry listing
-- partner_name: Terraform (terraform-registry)
-  partner: terraform
-  partner_match: mirror
-  mirror_match: domain
-  type: marketplace
-  relationship: platform-app
-  direction: third-party
-  channel: partner-built
-  marketplace: terraform-registry
-  evidence: https://registry.terraform.io/providers/keyfactor-pub/keyfactor
-  mirror_of: terraform/integrations/terraform-integration-edges.yml
-  apps:
-  - keyfactor-pub/keyfactor
-  - keyfactor-pub/ejbca
-  listing_count: 1
-  detected: '2026-10-21'
-  detected_by: mirror-platform-listings.py
-  category: infrastructure-as-code provider registry listing
-  badges:
-  - Verified publisher (Terraform partner tier)
 - partner_name: UK G-Cloud 14 (Digital Marketplace)
   partner: null
   partner_match: register
@@ -352,5 +279,99 @@ edges:
       P856 not contradicting (Kin 2026-10-20 decision 2)
   detected_by: sweep-common-criteria-certified-products.py
   first_seen: '2026-10-21'
+- partner_name: CrowdStrike (own)
+  partner: crowdstrike
+  partner_match: mirror
+  mirror_match: domain
+  type: marketplace
+  relationship: platform-app
+  direction: third-party
+  channel: partner-built
+  marketplace: own
+  evidence: https://marketplace.crowdstrike.com/listings/infosec-global-agilesec-analytics/
+  mirror_of: crowdstrike/integrations/crowdstrike-integration-edges.yml
+  apps:
+  - Keyfactor AgileSec
+  listing_count: 1
+  detected: '2026-10-14'
+  detected_by: mirror-platform-listings.py
+- partner_name: Docker Hub (docker-verified-publisher)
+  partner: docker-hub
+  partner_match: mirror
+  mirror_match: domain
+  type: marketplace
+  relationship: platform-app
+  direction: third-party
+  channel: partner-built
+  marketplace: docker-verified-publisher
+  evidence: https://hub.docker.com/u/keyfactor
+  mirror_of: docker-hub/integrations/docker-hub-integration-edges.yml
+  apps:
+  - keyfactor/command-cert-manager-issuer
+  - keyfactor/ejbca-cert-manager-issuer
+  - keyfactor/signserver-ce
+  listing_count: 1
+  detected: '2026-10-20'
+  detected_by: mirror-platform-listings.py
+  category: Docker Verified Publisher
+  badges:
+  - Docker Verified Publisher
+- partner_name: OpenTofu (opentofu-registry)
+  partner: opentofu
+  partner_match: mirror
+  mirror_match: domain
+  type: marketplace
+  relationship: platform-app
+  direction: third-party
+  channel: partner-built
+  marketplace: opentofu-registry
+  evidence: https://search.opentofu.org/provider/keyfactor-pub/keyfactor
+  mirror_of: opentofu/integrations/opentofu-integration-edges.yml
+  apps:
+  - keyfactor-pub/keyfactor
+  listing_count: 1
+  detected: '2026-10-21'
+  detected_by: mirror-platform-listings.py
+  category: infrastructure-as-code provider registry listing
+- partner_name: Terraform (terraform-registry)
+  partner: terraform
+  partner_match: mirror
+  mirror_match: domain
+  type: marketplace
+  relationship: platform-app
+  direction: third-party
+  channel: partner-built
+  marketplace: terraform-registry
+  evidence: https://registry.terraform.io/providers/keyfactor-pub/keyfactor
+  mirror_of: terraform/integrations/terraform-integration-edges.yml
+  apps:
+  - keyfactor-pub/keyfactor
+  - keyfactor-pub/ejbca
+  listing_count: 1
+  detected: '2026-10-21'
+  detected_by: mirror-platform-listings.py
+  category: infrastructure-as-code provider registry listing
+  badges:
+  - Verified publisher (Terraform partner tier)
+- partner_name: Artifact Hub (artifact-hub)
+  partner: artifact-hub
+  partner_match: mirror
+  mirror_match: domain
+  type: marketplace
+  relationship: platform-app
+  direction: third-party
+  channel: partner-built
+  marketplace: artifact-hub
+  evidence: https://artifacthub.io/packages/search?repo=ejbca
+  mirror_of: artifact-hub/integrations/artifact-hub-integration-edges.yml
+  apps:
+  - ejbca-ce
+  - signserver-ce
+  listing_count: 1
+  detected: '2026-10-22'
+  detected_by: mirror-platform-listings.py
+  category: Artifact Hub listing (Helm chart)
+  badges:
+  - 'Verified publisher (Artifact Hub verified publisher: repository ownership proven)'
 source:
 - crowdstrike/integrations/crowdstrike-integration-edges.yml
