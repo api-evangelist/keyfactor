@@ -64,6 +64,98 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-Keyfactor is a company surfaced as a portfolio company of insight-partners and added to the API Evangelist network as a stub for enrichment. Sector: cybersecurity. This profile is a lead awaiting the enrichment pipeline.
+Keyfactor is a machine-identity and PKI (public key infrastructure) company that provides a control plane for digital trust — helping organizations discover, issue, automate, and govern cryptographic keys and certificates across enterprise, cloud, DevOps, and IoT environments. Its core products are Keyfactor Command (certificate lifecycle automation at scale), EJBCA Enterprise (modern, quantum-ready PKI and certificate authority), SignServer / Signum (code signing and verification), Cloud PKI-as-a-Service, and cryptographic discovery and inventory. Keyfactor Command and EJBCA expose REST APIs (self-hosted or cloud, per customer) with official Go, .NET, and CLI clients, and an experimental MCP server for agentic-AI integration. Keyfactor is trusted by roughly 40% of the Fortune 500 and is backed by Insight Partners.
 
-Backed by: insight-partners — https://www.keyfactor.com/
+**Areas:** Company · Cybersecurity · PKI · Machine Identity · Certificate Lifecycle · Code Signing · Cryptography · Digital Trust · Security
+
+## Keyfactor on APIs.io
+
+Everything profiled for Keyfactor is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/keyfactor/](https://apis.io/providers/keyfactor/)** — or go straight to one of the APIs or properties below.
+
+### Published properties
+
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
+
+#### MCP servers (1)
+
+Model Context Protocol servers that expose the API to agents.
+
+- [command-mcp](https://apis.io/servers/keyfactor/command-mcp/)
+
+#### Security (4)
+
+Authentication, trust centre, and vulnerability disclosure.
+
+- [Keyfactor Authentication](https://apis.io/security/keyfactor/keyfactor-authentication/)
+- [Keyfactor Domain Security](https://apis.io/security/keyfactor/keyfactor-domain-security/)
+- [Keyfactor Trust Center](https://apis.io/security/keyfactor/keyfactor-trust-center/)
+- [Keyfactor Vulnerability Disclosure](https://apis.io/security/keyfactor/keyfactor-vulnerability-disclosure/)
+
+## Where to find this API
+
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
+
+- [Website](https://www.keyfactor.com/)
+- [Documentation](https://docs.keyfactor.com/)
+- [Getting started](https://docs.keyfactor.com/solution-areas/latest/get-started-with-pki-and-signing)
+- [Sign up](https://www.keyfactor.com/try-ejbca-enterprise/)
+- [Support](https://support.keyfactor.com/hc/en-us)
+- [Blog](https://www.keyfactor.com/blog/)
+- [Security](https://trust.keyfactor.com/)
+- [Compliance](https://trust.keyfactor.com/)
+- [Trust centre](https://trust.keyfactor.com/)
+- [Privacy policy](https://www.keyfactor.com/privacy-policy/)
+- [GitHub](https://github.com/Keyfactor)
+
+## API Evangelist rating
+
+**Kin Score 32.6** — thin · rubric 0.24.0 · scored 2026-10-17
+
+| Facet | Score |
+|---|---|
+| Discoverability | 55.0 |
+| Contract quality | 0.0 |
+| Contract governance | 18.2 |
+| Operational transparency | 13.2 |
+| Developer ergonomics | 64.3 |
+| Access clarity | 39.5 |
+
+**Agent readiness 6.0** — agent-aware
+
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | — |
+| Agentic Access | — |
+| Reversibility Documented | — |
+| MCP Server | documented (partial credit) |
+| Auth Clarity | bearer (partial credit) |
+| Idempotency | — |
+| Error Semantics | — |
+| OpenAPI Examples | — |
+| Rate Limit Signal | — |
+| Event Surface Described | — |
+| Agent Skills | — |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | — |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
+
+**Regulatory alignment 31.4** — Horizontal (data, software, accessibility, platform)
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/keyfactor/](https://apis.io/providers/keyfactor/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for Keyfactor: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/keyfactor/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
